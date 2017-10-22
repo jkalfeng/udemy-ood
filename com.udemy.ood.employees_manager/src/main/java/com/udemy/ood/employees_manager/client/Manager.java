@@ -7,20 +7,23 @@ public class Manager {
 
 	private static int employeeCount = 0;
 
-	private EmployeeDAO employeeDAO;
-
-	public Manager() {
-		employeeDAO = new EmployeeDAO();
-	}
-
 	public int hireEmployee(String name, String department) {
-		final int id = ++employeeCount;
-		employeeDAO.saveEmployee(new Employee(id, name, department));
-		return id;
+		try (EmployeeDAO employeeDAO = new EmployeeDAO()) {
+			final int id = ++employeeCount;
+			employeeDAO.saveEmployee(new Employee(id, name, department));
+			return id;
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		return -1;
 	}
 
 	public void terminateEmployee(int employeeID) {
-		employeeDAO.deleteEmployee(employeeDAO.getEmployeeByID(employeeID));
+		try (EmployeeDAO employeeDAO = new EmployeeDAO()) {
+			employeeDAO.deleteEmployee(employeeDAO.getEmployeeByID(employeeID));
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
 	}
 
 	public void printEmployeeReport(int employeeID) {
