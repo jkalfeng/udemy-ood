@@ -1,16 +1,29 @@
 package com.udemy.ood.employees_manager.client;
 
-import java.util.Random;
+import com.udemy.ood.employees_manager.model.Employee;
+import com.udemy.ood.employees_manager.model.dao.EmployeeDAO;
 
 public class Manager {
 
-	public int hireEmployee(String name) {
+	private static int employeeCount = 0;
 
-		int id = new Random(System.currentTimeMillis()).nextInt();
-		return Math.abs(id);
+	private EmployeeDAO employeeDAO;
+
+	public Manager() {
+		employeeDAO = new EmployeeDAO();
 	}
 
-	public void terminateEmployee(int id) {
+	public int hireEmployee(String name, String department) {
+		final int id = ++employeeCount;
+		employeeDAO.saveEmployee(new Employee(id, name, department));
+		return id;
+	}
+
+	public void terminateEmployee(int employeeID) {
+		employeeDAO.deleteEmployee(employeeDAO.getEmployeeByID(employeeID));
+	}
+
+	public void printEmployeeReport(int employeeID) {
 
 	}
 

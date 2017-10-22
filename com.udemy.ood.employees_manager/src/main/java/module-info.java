@@ -1,3 +1,4 @@
 module com.udemy.ood.employees.manager {
-	exports com.udemy.ood.employees_manager.model;
+	requires java.sql;
+	exports com.udemy.ood.employees_manager.client;
 }
