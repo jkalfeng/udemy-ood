@@ -2,6 +2,8 @@ package com.udemy.ood.employees_manager.client;
 
 import com.udemy.ood.employees_manager.model.Employee;
 import com.udemy.ood.employees_manager.model.dao.EmployeeDAO;
+import com.udemy.ood.employees_manager.reporting.EmployeeReportFormatter;
+import com.udemy.ood.employees_manager.reporting.Format;
 
 public class Manager {
 
@@ -26,8 +28,16 @@ public class Manager {
 		}
 	}
 
-	public void printEmployeeReport(int employeeID) {
+	public void printEmployeeReport(int employeeID, String reportFormat) {
+		try (EmployeeDAO employeeDAO = new EmployeeDAO()) {
+			EmployeeReportFormatter reportFormatter = new EmployeeReportFormatter(
+					employeeDAO.getEmployeeByID(employeeID),
+					Format.valueOf(reportFormat));
 
+			System.out.println(reportFormatter.getFormattedEmployee());
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
 	}
 
 }
