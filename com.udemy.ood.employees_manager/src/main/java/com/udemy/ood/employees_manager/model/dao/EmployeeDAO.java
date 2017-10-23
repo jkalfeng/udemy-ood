@@ -15,15 +15,15 @@ public class EmployeeDAO implements AutoCloseable {
 	}
 
 	public void saveEmployee(Employee employee) {
-		connectionManager.insert(employee);
+		connectionManager.getDatabase().add(employee);
 	}
 
 	public void deleteEmployee(Employee employee) {
-		connectionManager.delete(employee);
+		connectionManager.getDatabase().remove(employee);
 	}
 
 	public Employee getEmployeeByID(int id) {
-		return Optional.ofNullable(connectionManager.getEmployee(id))
+		return Optional.ofNullable(connectionManager.getDatabase().get(id))
 					.orElseThrow(() -> new RuntimeException("Unable to find employee with given id"));
 	}
 

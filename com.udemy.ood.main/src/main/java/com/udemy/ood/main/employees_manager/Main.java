@@ -8,6 +8,7 @@ public class Main {
 
 	public static void main(String[] args) throws IOException {
 		Manager m = new Manager();
+		m.hireEmployee("Jay", "CS");
 	}
 
 }
