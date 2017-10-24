@@ -4,11 +4,11 @@ public abstract class ReportFormatter {
 	
 	private Format format;
 
-	public ReportFormatter(Format format) {
+	protected ReportFormatter(Format format) {
 		this.format = format;
 	}
 
-	public String getFormattedValue(Object object) {
+	protected String getFormattedValue(Object object) {
 		return format == Format.CSV ? convertToCsv(object) : convertToXml(object);
 	}
 
