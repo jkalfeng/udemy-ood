@@ -1,5 +1,7 @@
 package com.udemy.ood.remote_control.service;
 
+import com.udemy.ood.remote_control.common.Controllable;
+
 import java.lang.reflect.Constructor;
 import java.lang.reflect.InvocationTargetException;
 
@@ -16,8 +18,7 @@ public class RemoteControl {
 
 	public void chooseControl(Device device) {
 		try {
-			Constructor<? extends Controllable> controllableConstructor = device.getControllableClass().getDeclaredConstructor();
-			controllableConstructor.setAccessible(true);
+			Constructor<? extends Controllable> controllableConstructor = device.getControllableClass().getConstructor();
 			this.controllable = controllableConstructor.newInstance();
 		} catch (InstantiationException | IllegalAccessException | InvocationTargetException | NoSuchMethodException e) {
 			controllable = null;

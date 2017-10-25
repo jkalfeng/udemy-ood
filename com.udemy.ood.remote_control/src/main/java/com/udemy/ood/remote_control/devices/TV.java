@@ -1,9 +1,9 @@
 package com.udemy.ood.remote_control.devices;
 
-import com.udemy.ood.remote_control.service.Controllable;
+import com.udemy.ood.remote_control.common.Controllable;
 
 public class TV implements Controllable {
-	private TV() {}
+	public TV() {}
 
 	@Override
 	public void performOnAction() {
