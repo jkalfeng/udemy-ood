@@ -1,6 +1,7 @@
 package com.udemy.ood.remote_control.service;
 
 import com.udemy.ood.remote_control.common.Controllable;
+import com.udemy.ood.remote_control.devices.GameConsole;
 import com.udemy.ood.remote_control.devices.Projector;
 import com.udemy.ood.remote_control.devices.SoundSystem;
 import com.udemy.ood.remote_control.devices.TV;
@@ -9,7 +10,8 @@ public enum Device {
 
 	PROJECTOR(Projector.class),
 	SOUND_SYSTEM(SoundSystem.class),
-	TELEVISION(TV.class);
+	TELEVISION(TV.class),
+	GAME_CONSOLE(GameConsole.class);
 
 	private final Class<? extends Controllable> clazz;
 

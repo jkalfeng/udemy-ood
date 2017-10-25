@@ -7,8 +7,7 @@ public class Main {
 
 	public static void main(String[] args) {
 		RemoteControl control = RemoteControl.getInstance();
-
-		control.chooseControl(Device.TELEVISION);
+		control.chooseControl(Device.GAME_CONSOLE);
 		control.turnOnDevice();
 		control.turnOffDevice();
 	}
