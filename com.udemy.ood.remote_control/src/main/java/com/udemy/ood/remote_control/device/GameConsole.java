@@ -1,8 +1,10 @@
-package com.udemy.ood.remote_control.devices;
+package com.udemy.ood.remote_control.device;
 
 import com.udemy.ood.remote_control.common.Controllable;
 
 public class GameConsole implements Controllable {
+	public GameConsole() {}
+
 	@Override
 	public void performOnAction() {
 		System.out.println("Game on!");

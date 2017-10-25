@@ -1,9 +1,9 @@
-package com.udemy.ood.remote_control.devices;
+package com.udemy.ood.remote_control.device;
 
 import com.udemy.ood.remote_control.common.Controllable;
 
-public class Projector implements Controllable {
-	public Projector() {}
+public class SoundSystem implements Controllable {
+	public SoundSystem() {}
 
 	@Override
 	public void performOnAction() {
