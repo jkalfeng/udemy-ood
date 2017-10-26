@@ -17,11 +17,5 @@
     <orderEntry type="module" module-name="com.udemy.ood.employees_manager" />
     <orderEntry type="module" module-name="com.udemy.ood.remote_control" />
     <orderEntry type="module" module-name="com.udemy.ood.factory" />
-    <orderEntry type="library" name="Maven: org.springframework:spring-context:5.0.1.RELEASE" level="project" />
-    <orderEntry type="library" name="Maven: org.springframework:spring-aop:5.0.1.RELEASE" level="project" />
-    <orderEntry type="library" name="Maven: org.springframework:spring-beans:5.0.1.RELEASE" level="project" />
-    <orderEntry type="library" name="Maven: org.springframework:spring-core:5.0.1.RELEASE" level="project" />
-    <orderEntry type="library" name="Maven: org.springframework:spring-jcl:5.0.1.RELEASE" level="project" />
-    <orderEntry type="library" name="Maven: org.springframework:spring-expression:5.0.1.RELEASE" level="project" />
   </component>
 </module>

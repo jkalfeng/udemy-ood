@@ -22,20 +22,13 @@
          </plugin>
       </plugins>
    </build>
+
    <modules>
       <module>com.udemy.ood.employees_manager</module>
       <module>com.udemy.ood.remote_control</module>
       <module>com.udemy.ood.factory</module>
       <module>com.udemy.ood.main</module>
    </modules>
-
-   <dependencies>
-      <dependency>
-         <groupId>org.springframework</groupId>
-         <artifactId>spring-context</artifactId>
-         <version>RELEASE</version>
-      </dependency>
-   </dependencies>
 
    <properties>
       <maven.compiler.source>9</maven.compiler.source>
