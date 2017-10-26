@@ -1,6 +1,6 @@
 package com.udemy.ood.remote_control.device;
 
-import com.udemy.ood.remote_control.Controllable;
+import com.udemy.ood.remote_control.remote.Controllable;
 
 public class Projector implements Controllable {
 	public Projector() {}

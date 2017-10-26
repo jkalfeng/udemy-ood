@@ -1,4 +1,4 @@
-package com.udemy.ood.remote_control;
+package com.udemy.ood.remote_control.remote;
 
 public interface Controllable {
 
