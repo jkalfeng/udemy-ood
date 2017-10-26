@@ -2,11 +2,15 @@ package com.udemy.ood.factory.factory_process;
 
 import com.udemy.ood.factory.Device;
 import com.udemy.ood.factory.GeneralManufacturingProcess;
+import com.udemy.ood.factory.device.Desktop;
 
 public class DesktopFactoryProcess implements GeneralManufacturingProcess {
+
+	private Desktop desktopDevice;
+
 	@Override
 	public Device getDevice() {
-		return null;
+		return desktopDevice;
 	}
 
 	@Override
