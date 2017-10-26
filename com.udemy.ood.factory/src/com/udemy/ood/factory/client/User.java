@@ -5,7 +5,7 @@ import com.udemy.ood.factory.common.Manufacturable;
 public class User {
 
 	public void use(Manufacturable product) {
-
+		product.performFunction();
 	}
 
 }

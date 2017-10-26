@@ -15,7 +15,7 @@ public class SmartphoneFactoryProcess implements GeneralManufacturingProcess {
 
 	@Override
 	public void storeProduct() {
-
+		smartphone = new Smartphone();
 	}
 
 	@Override
