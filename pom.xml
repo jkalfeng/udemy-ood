@@ -25,6 +25,7 @@
    <modules>
       <module>com.udemy.ood.employees_manager</module>
       <module>com.udemy.ood.remote_control</module>
+      <module>com.udemy.ood.factory</module>
       <module>com.udemy.ood.main</module>
    </modules>
 
