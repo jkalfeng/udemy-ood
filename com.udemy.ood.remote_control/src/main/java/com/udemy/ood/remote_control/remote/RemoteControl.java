@@ -1,6 +1,6 @@
 package com.udemy.ood.remote_control.remote;
 
-import com.udemy.ood.remote_control.common.Controllable;
+import com.udemy.ood.remote_control.Controllable;
 
 import java.util.Optional;
 

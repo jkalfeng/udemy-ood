@@ -1,6 +1,6 @@
 package com.udemy.ood.remote_control.device;
 
-import com.udemy.ood.remote_control.common.Controllable;
+import com.udemy.ood.remote_control.Controllable;
 
 public class SoundSystem implements Controllable {
 	public SoundSystem() {}

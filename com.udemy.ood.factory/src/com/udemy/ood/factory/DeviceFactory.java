@@ -8,8 +8,9 @@ public class DeviceFactory {
 		this.process = process;
 	}
 
-	public void build() {
+	public Device build() {
 		process.launchProcess();
+		return process.getDevice();
 	}
 
 }

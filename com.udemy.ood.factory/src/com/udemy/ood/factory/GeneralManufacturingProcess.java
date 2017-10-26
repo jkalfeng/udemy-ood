@@ -9,6 +9,8 @@ public interface GeneralManufacturingProcess {
 		storeDevice();
 	}
 
+	Device getDevice();
+
 	void storeDevice();
 
 	void packageDevice();
