@@ -29,6 +29,7 @@
       <module>com.udemy.ood.remote_control</module>
       <module>com.udemy.ood.factory</module>
       <module>com.udemy.ood.main</module>
+       <module>com.udemy.ood.ems</module>
    </modules>
 
    <properties>

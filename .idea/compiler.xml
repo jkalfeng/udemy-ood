@@ -8,6 +8,7 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="com.udemy.ood.employees_manager" />
+        <module name="com.udemy.ood.ems" />
         <module name="com.udemy.ood.factory" />
         <module name="com.udemy.ood.main" />
         <module name="com.udemy.ood.remote_control" />
@@ -16,6 +17,7 @@
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="com.udemy.ood.employees_manager" target="9" />
+      <module name="com.udemy.ood.ems" target="9" />
       <module name="com.udemy.ood.factory" target="9" />
       <module name="com.udemy.ood.main" target="9" />
       <module name="com.udemy.ood.remote_control" target="9" />
