@@ -24,6 +24,7 @@
    </build>
 
    <modules>
+      <module>com.udemy.ood.transaction</module>
       <module>com.udemy.ood.employees_manager</module>
       <module>com.udemy.ood.remote_control</module>
       <module>com.udemy.ood.factory</module>

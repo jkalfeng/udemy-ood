@@ -6,6 +6,7 @@
       <module fileurl="file://$PROJECT_DIR$/com.udemy.ood.factory/com.udemy.ood.factory.iml" filepath="$PROJECT_DIR$/com.udemy.ood.factory/com.udemy.ood.factory.iml" />
       <module fileurl="file://$PROJECT_DIR$/com.udemy.ood.main/com.udemy.ood.main.iml" filepath="$PROJECT_DIR$/com.udemy.ood.main/com.udemy.ood.main.iml" />
       <module fileurl="file://$PROJECT_DIR$/com.udemy.ood.remote_control/com.udemy.ood.remote_control.iml" filepath="$PROJECT_DIR$/com.udemy.ood.remote_control/com.udemy.ood.remote_control.iml" />
+      <module fileurl="file://$PROJECT_DIR$/com.udemy.ood.transaction/com.udemy.ood.transaction.iml" filepath="$PROJECT_DIR$/com.udemy.ood.transaction/com.udemy.ood.transaction.iml" />
       <module fileurl="file://$PROJECT_DIR$/udemy-ood.iml" filepath="$PROJECT_DIR$/udemy-ood.iml" />
     </modules>
   </component>
