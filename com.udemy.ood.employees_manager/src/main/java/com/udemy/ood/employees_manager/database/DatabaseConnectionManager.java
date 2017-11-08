@@ -4,12 +4,13 @@ import com.udemy.ood.employees_manager.model.Employee;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.concurrent.atomic.AtomicBoolean;
 
 public class DatabaseConnectionManager {
 
 	private static DatabaseConnectionManager instance = new DatabaseConnectionManager();
 
-	private boolean connected;
+	private AtomicBoolean connected = new AtomicBoolean(false);
 	// pretend this is the database...
 	private final List<Employee> database = new ArrayList<>();
 
@@ -20,17 +21,17 @@ public class DatabaseConnectionManager {
 	}
 
 	public void connect() {
-		connected = true;
+		connected.set(true);
 		System.out.println("Successfully connected to the database");
 	}
 
 	public void disconnect() {
-		connected = false;
+		connected.set(false);
 		System.out.println("Successfully disconnected from the database");
 	}
 
 	public List<Employee> getDatabase() {
-		if (!connected) {
+		if (!connected.get()) {
 			throw new RuntimeException("Database not connected, cannot perform action");
 		}
 		return database;
