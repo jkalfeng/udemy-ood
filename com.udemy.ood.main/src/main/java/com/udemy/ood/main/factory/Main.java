@@ -11,7 +11,6 @@ public class Main {
 		User user = new User();
 		GeneralManufacturingProcess factoryProcess = new SmartphoneFactoryProcess();
 		Manufacturable product = factoryProcess.launchProcess().getProduct();
-
 		user.use(product);
 	}
 }
