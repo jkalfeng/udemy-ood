@@ -2,22 +2,22 @@ package com.udemy.ood.factory.common;
 
 public interface GeneralManufacturingProcess {
 
-	default GeneralManufacturingProcess launchProcess() {
-		assembleProduct();
-		testProduct();
-		packageProduct();
-		storeProduct();
-		return this;
-	}
+   default GeneralManufacturingProcess launchProcess() {
+      assembleProduct();
+      testProduct();
+      packageProduct();
+      storeProduct();
+      return this;
+   }
 
-	Manufacturable getProduct();
+   Manufacturable getProduct();
 
-	void storeProduct();
+   void storeProduct();
 
-	void packageProduct();
+   void packageProduct();
 
-	void testProduct();
+   void testProduct();
 
-	void assembleProduct();
+   void assembleProduct();
 
 }

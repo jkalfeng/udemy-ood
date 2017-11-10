@@ -6,30 +6,30 @@ import com.udemy.ood.factory.device.Smartphone;
 
 public class SmartphoneFactoryProcess implements GeneralManufacturingProcess {
 
-	private Smartphone smartphone;
+   private Smartphone smartphone;
 
-	@Override
-	public Manufacturable getProduct() {
-		return smartphone;
-	}
+   @Override
+   public Manufacturable getProduct() {
+      return smartphone;
+   }
 
-	@Override
-	public void storeProduct() {
-		smartphone = new Smartphone();
-	}
+   @Override
+   public void storeProduct() {
+      smartphone = new Smartphone();
+   }
 
-	@Override
-	public void packageProduct() {
+   @Override
+   public void packageProduct() {
 
-	}
+   }
 
-	@Override
-	public void testProduct() {
+   @Override
+   public void testProduct() {
 
-	}
+   }
 
-	@Override
-	public void assembleProduct() {
+   @Override
+   public void assembleProduct() {
 
-	}
+   }
 }

@@ -6,30 +6,30 @@ import com.udemy.ood.factory.device.Computer;
 
 public class ComputerFactoryProcess implements GeneralManufacturingProcess {
 
-	private Computer computer;
+   private Computer computer;
 
-	@Override
-	public Manufacturable getProduct() {
-		return computer;
-	}
+   @Override
+   public Manufacturable getProduct() {
+      return computer;
+   }
 
-	@Override
-	public void storeProduct() {
-		computer = new Computer();
-	}
+   @Override
+   public void storeProduct() {
+      computer = new Computer();
+   }
 
-	@Override
-	public void packageProduct() {
+   @Override
+   public void packageProduct() {
 
-	}
+   }
 
-	@Override
-	public void testProduct() {
+   @Override
+   public void testProduct() {
 
-	}
+   }
 
-	@Override
-	public void assembleProduct() {
+   @Override
+   public void assembleProduct() {
 
-	}
+   }
 }

@@ -2,8 +2,8 @@ package com.udemy.ood.remote_control.remote;
 
 public interface Controllable {
 
-	void performOnAction();
+   void performOnAction();
 
-	void performOffAction();
+   void performOffAction();
 
 }

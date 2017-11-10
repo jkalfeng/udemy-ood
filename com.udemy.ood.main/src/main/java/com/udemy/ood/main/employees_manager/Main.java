@@ -8,12 +8,12 @@ import java.util.List;
 
 public class Main {
 
-	public static void main(String[] args) throws IOException {
-		List<Integer> activeEmployeeIDs = new ArrayList<>();
-		Manager m = new Manager();
-		if (activeEmployeeIDs.add(m.hireEmployee("Jay", "CS"))) {
-			System.out.println("Employee added");
-		}
-	}
+   public static void main(String[] args) throws IOException {
+      List<Integer> activeEmployeeIDs = new ArrayList<>();
+      Manager m = new Manager();
+      if (activeEmployeeIDs.add(m.hireEmployee("Jay", "CS"))) {
+         System.out.println("Employee added");
+      }
+   }
 
 }

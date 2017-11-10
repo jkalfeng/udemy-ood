@@ -4,9 +4,9 @@ import com.udemy.ood.transaction.common.Accounting;
 
 public class Account {
 
-	private Accounting accountingService;
+   private Accounting accountingService;
 
-	public Account(Accounting accountingService) {
-		this.accountingService = accountingService;
-	}
+   public Account(Accounting accountingService) {
+      this.accountingService = accountingService;
+   }
 }

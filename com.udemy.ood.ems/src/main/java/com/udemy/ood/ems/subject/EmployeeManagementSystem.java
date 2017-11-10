@@ -12,27 +12,27 @@ import java.util.List;
 @Component
 public class EmployeeManagementSystem implements Subject {
 
-	private final List<Observer> observers = new ArrayList<>();
-	private final List<Employee> employees = new ArrayList<>();
+   private final List<Observer> observers = new ArrayList<>();
+   private final List<Employee> employees = new ArrayList<>();
 
-	private final EmployeeDAO employeeDAO;
+   private final EmployeeDAO employeeDAO;
 
-	public EmployeeManagementSystem(EmployeeDAO employeeDAO) {
-		this.employeeDAO = employeeDAO;
-	}
+   public EmployeeManagementSystem(EmployeeDAO employeeDAO) {
+      this.employeeDAO = employeeDAO;
+   }
 
-	@Override
-	public synchronized void register(Observer observer) {
-		observers.add(observer);
-	}
+   @Override
+   public synchronized void register(Observer observer) {
+      observers.add(observer);
+   }
 
-	@Override
-	public synchronized void remove(Observer observer) {
-		observers.remove(observer);
-	}
+   @Override
+   public synchronized void remove(Observer observer) {
+      observers.remove(observer);
+   }
 
-	@Override
-	public void notifyObservers() {
-		observers.forEach(Observer::notifySelf);
-	}
+   @Override
+   public void notifyObservers() {
+      observers.forEach(Observer::notifySelf);
+   }
 }

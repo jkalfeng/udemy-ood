@@ -5,12 +5,12 @@ import com.udemy.ood.remote_control.remote.RemoteControl;
 
 public class Main {
 
-	public static void main(String[] args) {
-		RemoteControl control = RemoteControl.getInstance();
-		TV tv = new TV();
+   public static void main(String[] args) {
+      RemoteControl control = RemoteControl.getInstance();
+      TV tv = new TV();
 
-		control.controlDevice(tv);
-		control.turnOnDevice();
-		control.turnOffDevice();
-	}
+      control.controlDevice(tv);
+      control.turnOnDevice();
+      control.turnOffDevice();
+   }
 }

@@ -12,44 +12,44 @@ import java.util.List;
 
 public class TransactionService implements Accounting, Reporting {
 
-	private Customer customer;
-	private List<Product> products;
+   private Customer customer;
+   private List<Product> products;
 
-	private Double invoiceBalance = null;
+   private Double invoiceBalance = null;
 
-	public TransactionService(Customer customer,
-	                          Product... products) {
-		this.customer = customer;
-		this.products = Arrays.asList(products);
-	}
+   public TransactionService(Customer customer,
+                             Product... products) {
+      this.customer = customer;
+      this.products = Arrays.asList(products);
+   }
 
-	private void addProductPriceToBalance(Product product) {
-		invoiceBalance += product.getPrice();
-	}
+   private void addProductPriceToBalance(Product product) {
+      invoiceBalance += product.getPrice();
+   }
 
-	@Override
-	public void prepareInvoice() {
-		products.forEach(this::addProductPriceToBalance);
-	}
+   @Override
+   public void prepareInvoice() {
+      products.forEach(this::addProductPriceToBalance);
+   }
 
-	@Override
-	public void chargeCustomer() {
-		customer.pay(invoiceBalance);
-		invoiceBalance = null;
-	}
+   @Override
+   public void chargeCustomer() {
+      customer.pay(invoiceBalance);
+      invoiceBalance = null;
+   }
 
-	@Override
-	public String getName() {
-		return customer.getName();
-	}
+   @Override
+   public String getName() {
+      return customer.getName();
+   }
 
-	@Override
-	public String getDate() {
-		return LocalDateTime.now().format(DateTimeFormatter.ofPattern("dd-MMMM-yyyy"));
-	}
+   @Override
+   public String getDate() {
+      return LocalDateTime.now().format(DateTimeFormatter.ofPattern("dd-MMMM-yyyy"));
+   }
 
-	@Override
-	public String getProductBreakdown() {
-		return products.toString();
-	}
+   @Override
+   public String getProductBreakdown() {
+      return products.toString();
+   }
 }

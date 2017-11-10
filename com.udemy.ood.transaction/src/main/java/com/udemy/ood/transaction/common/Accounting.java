@@ -2,6 +2,7 @@ package com.udemy.ood.transaction.common;
 
 public interface Accounting {
 
-	void prepareInvoice();
-	void chargeCustomer();
+   void prepareInvoice();
+
+   void chargeCustomer();
 }
