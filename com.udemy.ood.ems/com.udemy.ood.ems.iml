@@ -4,7 +4,7 @@
     <facet type="Spring" name="Spring">
       <configuration>
         <fileset id="fileset" name="Application Context" removed="false">
-          <file>file://$MODULE_DIR$/src/main/resources/META-INF/spring/application-context.xml</file>
+          <file>file://$MODULE_DIR$/src/main/java/com/udemy/ood/ems/config/MainConfig.java</file>
         </fileset>
       </configuration>
     </facet>
@@ -26,5 +26,6 @@
     <orderEntry type="library" name="Maven: org.springframework:spring-core:5.0.1.RELEASE" level="project" />
     <orderEntry type="library" name="Maven: org.springframework:spring-jcl:5.0.1.RELEASE" level="project" />
     <orderEntry type="library" name="Maven: org.springframework:spring-expression:5.0.1.RELEASE" level="project" />
+    <orderEntry type="module" module-name="com.udemy.ood.employees_manager" />
   </component>
 </module>
