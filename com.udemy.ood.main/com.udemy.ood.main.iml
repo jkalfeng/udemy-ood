@@ -14,8 +14,10 @@
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="module" module-name="com.udemy.ood.ems" />
     <orderEntry type="module" module-name="com.udemy.ood.employees_manager" />
     <orderEntry type="module" module-name="com.udemy.ood.remote_control" />
     <orderEntry type="module" module-name="com.udemy.ood.factory" />
+    <orderEntry type="library" name="Maven: com.udemy.ood.ems:com.udemy.ood.ems:1.0.0-SNAPSHOT" level="project" />
   </component>
 </module>
