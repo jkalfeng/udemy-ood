@@ -33,8 +33,7 @@ public class EmployeeDAO implements AutoCloseable {
    }
 
    public Employee getEmployeeByID(int id) {
-      return Optional.ofNullable(connectionManager.getDatabase().get(id))
-            .orElseThrow(() -> new RuntimeException("Unable to find employee with given id"));
+      return Optional.ofNullable(connectionManager.getDatabase().get(id)).orElse(null);
    }
 
    @Override

@@ -3,7 +3,6 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/com.udemy.ood.employees_manager/com.udemy.ood.employees_manager.iml" filepath="$PROJECT_DIR$/com.udemy.ood.employees_manager/com.udemy.ood.employees_manager.iml" />
-      <module fileurl="file://$PROJECT_DIR$/com.udemy.ood.ems/com.udemy.ood.ems.iml" filepath="$PROJECT_DIR$/com.udemy.ood.ems/com.udemy.ood.ems.iml" />
       <module fileurl="file://$PROJECT_DIR$/com.udemy.ood.factory/com.udemy.ood.factory.iml" filepath="$PROJECT_DIR$/com.udemy.ood.factory/com.udemy.ood.factory.iml" />
       <module fileurl="file://$PROJECT_DIR$/com.udemy.ood.main/com.udemy.ood.main.iml" filepath="$PROJECT_DIR$/com.udemy.ood.main/com.udemy.ood.main.iml" />
       <module fileurl="file://$PROJECT_DIR$/com.udemy.ood.remote_control/com.udemy.ood.remote_control.iml" filepath="$PROJECT_DIR$/com.udemy.ood.remote_control/com.udemy.ood.remote_control.iml" />
