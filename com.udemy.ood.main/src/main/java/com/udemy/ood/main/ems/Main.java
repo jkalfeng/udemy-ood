@@ -18,5 +18,6 @@ public class Main {
 
       List<Employee> recruits = Agent.getRecruits();
       recruits.forEach(ems::hire);
+      ems.fire(recruits.get(1).getId());
    }
 }
